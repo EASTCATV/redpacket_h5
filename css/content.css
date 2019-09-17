@@ -1,0 +1,1815 @@
+html {
+  overflow-x: hidden;
+  /*background: #F8F8FA;*/
+  background: #FAFAFA;
+}
+body{
+  background: #FAFAFA;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:20px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cy-footer .iconfont{
+  font-size: 1rem;
+}
+.cy-myList .iconfont,
+.cy-details-list .iconfont{
+  color: #999;
+}
+.cy-details-list li:first-child .iconfont{
+  color: red !important;
+}
+.cy-icon-home .iconfont{
+  font-size: 1.25rem;
+}
+.cy-buttons .iconfont{
+  position: relative;
+  top:.2rem;
+  font-size: 1.25rem;
+  margin-right: .3rem;
+  color: #999;
+}
+.cy-icon-info .iconfont{
+  font-size: 1.2rem;
+}
+/*=======message=====*/
+.cy-bar-nav{
+  font-size:.7rem;
+  line-height: 2.2rem;
+  background: #333;
+}
+.cy-header{
+  position: fixed;
+  top: auto;
+  z-index: 999;
+  table-layout: fixed;
+}
+.cy-margin-top-47{
+  margin-top: 47px;
+}
+/*.cy-border-radius{
+  border-radius: .75rem;
+}*/
+.cy-search-input::-webkit-input-placeholder{
+  font-size: .65rem !important;
+  color: #8E8E92 !important;
+}
+.cy-search-icon{
+  font-size: .4rem;
+  margin-right: .55rem !important;
+}
+.cy-search-btn{
+  font-size: .8rem !important;
+  color: #FC3768 !important;
+}
+#search{
+  padding-top:2.25rem;
+  height:4.45rem
+}
+/*消息列表*/
+.cy-list-item-arrow::before{
+  content: none;
+}
+.cy-list-item-arrow{
+  border-bottom: 1px solid #e8e8e9;
+}
+.cy-headImg{
+  width: 2.25rem;
+  height: 2.25rem;
+  position: relative;
+}
+.cy-message-num{
+  top: 2rem;
+  left: 50%;
+  background: #FC3768;
+}
+.cy-name{
+  color: #1D1D26 !important;
+}
+.cy-time{
+  font-size: .5rem !important;
+  -webkit-transform: scale(0.83);
+  color: #8E8E92 !important;
+}
+.cy-chat-content{
+  width: 13.2rem;
+  width: 20em;
+  height: .925rem;
+  font-size: .65rem !important;
+  color: #8E8E92 !important;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis !important;
+}
+.cy-session-box,
+.cy-contact-tel{
+  width: calc(100% + 3.5rem);
+  overflow-x: auto;
+  position: relative;
+}
+.cy-session-box{
+  background-image:none !important;
+  margin-top: -0.05rem;
+}
+.cy-session-box .cy-session-content,
+.cy-beizhu,
+.cy-quxiao {
+  float: left;
+  width: calc(100% - 3.5rem);
+  background-image:none !important;
+  height: 3.25rem;
+}
+.cy-session-box .cy-del-btn{
+  width: 3.5rem;
+  float: left;
+  height: 3.25rem;
+  line-height: 3.25rem;
+  text-align: center;
+  background: #FC3768;
+  color: #fff;
+}
+.cy-del-btn .iconfont{
+  font-size: 1.25rem;
+}
+.cy-lxr{
+  height:2rem;
+  line-height:2rem;
+  width:100%;
+  background:#fff;
+  padding-left:.75rem;
+}
+.cy-hm{
+  font-size: .65rem !important;
+  color:#1D1D26 !important;
+}
+.cy-padset{
+  padding:.55rem 0 !important;
+}
+.cy-noInfo{
+  color:#8E8E92;
+  font-size:.8rem;
+  text-align:center;
+  margin-top:1.5rem;
+  letter-spacing:1.23px;
+}
+#facebox{
+  display: none;
+}
+/*end 消息列表*/
+
+/*footer*/
+.cy-footer{
+  border-top: 1px solid #E8E8E9;
+}
+.cy-footer-btn img{
+  position: relative;
+  z-index: 20;
+  top: 0.1rem;
+  display: inline;
+  width: 1rem;
+}
+.cy-active{
+  color: #FC3768 !important;
+}
+.cy-bar-tab-label{
+  font-size: .65rem !important;
+}
+.cy-footer .cy-footer-num{
+  background: #FC3768;
+}
+/*end footer*/
+
+/*chat*/
+.cy-btn-icon span{
+  font-size: .7rem;
+}
+.cy-chat{
+  background: #F8F8FA;
+  padding: 0 .5rem;
+  margin-bottom: 2.75rem;
+  padding-top: 2.25rem;
+}
+.cy-chat-time{
+  padding: .8rem;
+  line-height: 1.15rem;
+  margin-bottom: 0 !important;
+}
+.cy-chat-time span{
+  font-size: .65rem;
+  background: #B6B6B9;
+  padding: .1rem .15rem;
+  border-radius: .2rem;
+  color: #fff;
+}
+.aui-chat-arrow{
+  background-image: url(../img/lt_xx.png) !important;
+  width: 0.4rem !important;
+  height: .4rem !important;
+}
+.cy-chat-arrowL{
+  -webkit-transform: rotate(0deg) !important;
+  transform: rotate(0deg) !important;
+  left: -0.4rem !important;
+}
+.cy-chat-arrowR{
+  -webkit-transform: rotate(180deg) !important;
+  transform: rotate(180deg) !important;
+  right: -0.375rem !important;
+}
+.cy-chat .aui-chat-inner{
+  max-width: 100% !important;
+}
+.aui-chat-content{
+  border: 1px solid #d1d6d8;
+  background: #fff !important;
+  border-radius: .5rem;
+  max-width: 12.25rem !important;
+}
+.cy-chat .aui-chat-item{
+  margin-bottom: 1.05rem;
+}
+.cy-chat .aui-chat-right .aui-chat-content{
+  right: 0;
+  margin-right: .5rem;
+}
+/*名片*/
+.cy-nameCard{
+  padding:.5rem 0 .25rem !important;
+}
+.cy-cardInfo{
+  height:2.25rem;
+  margin-bottom:.5rem;
+  padding:0 .5rem;
+}
+.cy-cardInfo img{
+  float:left;
+  border-radius:50%;
+  margin-right:.85rem;
+  width:2.25rem;
+}
+.cy-cardInfo p{
+  float:left;
+}
+.cy-cardInfo p span:first-child{
+  font-size:.8rem;
+  color:#1D1D26;
+}
+.cy-cardInfo p span:last-child{
+  font-size: .65rem;
+}
+.cy-cardF{
+  padding:.3rem .5rem 0;
+}
+.cy-send-icon{
+  position:absolute;
+  bottom:0;
+  right:0;
+  height:1.75rem;
+  line-height:1.75rem;
+  font-size:.7rem;
+  text-align:right;
+  width:100%;
+  background:#fff;
+}
+.cy-face-icon input{
+  position:absolute;
+  bottom:.25rem;
+  right:0;
+  background:none;
+  border-left:1px solid #ccc;
+  padding:0 .5rem;
+  height:1.25rem;
+  line-height:1.25rem;
+}
+#saytext img{
+  display: inline-block;
+  width: 5px;
+}
+.cy-iconK{
+  display:none;
+  height:1.1rem;
+  line-height:1.1rem;
+}
+#cy-iconK{
+  overflow:hidden;
+  width: 8.8rem;
+  float: left;
+}
+#cy-iconK img{
+  display: inline-block;
+}
+.cy-icon-inline img{
+  display: inline-block !important;
+}
+/*chat footer*/
+.cy-chat-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  border-top: 1px solid #EDEDEE;
+  background: #F9F9F9;
+}
+.cy-left{
+  float: left;
+}
+.cy-right{
+  float: right;
+}
+.cy-chat-btn{
+  margin: .725rem .5rem .625rem .55rem;
+  width: 1.25rem;
+}
+.cy-chat-text{
+  width: 11.75rem;
+  height: 2rem;
+  margin-top: .355rem;
+  border: 1px solid #DADEE2;
+  border-radius: .2rem;
+  box-sizing: border-box;
+  background: #fff;
+}
+.cy-write_box{
+  padding: .4rem .5rem;
+}
+.cy-write_box input{
+  font-size: .8rem;
+  float: left;
+  width: 8.8rem;
+}
+.cy-text-close{
+  display: inline-block;
+  float: right;
+}
+.cy-text-close img{
+  width: .65rem;
+  margin-top: .3rem;
+}
+.cy-chat-btn1 img{
+  width: 1.25rem;
+  margin: .725rem 0 0 .5rem;
+}
+.cy-talk-btn{
+  margin: .45rem 3.9rem;
+  font-size: .8rem;
+  line-height: normal;
+  display: none;
+}
+.cy-talk-btn input{
+  left: 2.25rem;
+  width: 64% !important;
+}
+.cy-talk-yy{
+  position:fixed;
+  top:12rem;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto auto;
+  width:10rem;
+  display:none
+}
+.cy-talk-yy img{
+  width: 100%;
+}
+.cy-text-close{
+  display: none;
+}
+.cy-chat-btn2{
+  margin: .725rem 0rem .625rem .75rem;
+  width: 1.25rem;
+}
+.cy-send{
+    margin: .3rem 0 0 .25rem;
+    width: 2.1rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: .7rem;
+    background: #FC3768;
+    color: #fff;
+    border-radius: .4rem;
+}
+.cy-send-btn{
+  display: none;
+}
+/*表情框   +'图标*/
+.cy_face_icon,
+.cy-add-icon{
+  display: none;
+}
+.cy-add-footerK{
+  position: absolute !important;
+  bottom: 0;
+  width: 100%;
+  height:10.8rem;
+  border-top:1px solid #EDEDEE !important;
+}
+/*点击’+‘图标后拍照、、的样式*/
+.cy-add-list{
+  margin: .75rem 0 0 .75rem;
+}
+.cy-add-list li {
+  position: relative;
+  float: left;
+  margin:0 1.25rem .4rem 0;
+  height: 4.55rem;
+}
+.cy-add-list li img{
+  width: 3.375rem;
+}
+.cy-add-list li span{
+  width: 3.375rem;
+  line-height: .925rem;
+  display: inline-block;
+  text-align: center;
+  font-size: .65rem;
+  position: absolute;
+  margin-top: .225rem;
+}
+.cy-file-pic input{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 3.375rem;
+  height: 4.55rem;
+}
+/*end chat*/
+
+/*redPacket*/
+.cy-my-redPacket{
+  font-size: .7rem;
+}
+/*end redPacket*/
+
+/*details*/
+.cy-details-name{
+  font-size: .75rem;
+}
+.cy-name-nc,
+.cy-tel{
+  font-size: .65rem;
+  color: #8E8E92;
+}
+.cy-margin-right-22{
+  margin-right: 1.125rem;
+}
+.cy-lineH-50{
+  height: 2.5rem;
+  line-height: 2.5rem !important;
+}
+.cy-lineH-li-50 li{
+  height: 2.5rem;
+  line-height: 2.5rem !important;
+}
+.cy-lineH-50:active{
+  background: #fff !important;
+}
+.cy-item-label{
+  width: 3.325rem !important;
+  padding-right: 0 !important;
+  margin-right: .5rem !important;
+}
+.cy-margin-40{
+  margin: 1rem 0  !important;
+}
+.cy-details-tel a{
+  color: #FC3768;
+}
+.cy-detils-ziliao{
+  color: #8E8E92;
+}
+.cy-detals-send,
+.cy-detals-del{
+  width: 90%;
+  background: #FC3768;
+  color: #fff;
+  margin-top: 1.2rem;
+  margin-left: 5%;
+  border-radius: .5rem;
+}
+.cy-detals-send:active,
+.cy-detals-del:active{
+  background: #E72A59;
+  color: #fff;
+}
+/*end details*/
+
+/*detailsSetting*/
+.cy-name-set,
+.cy-clearCacha{
+  position:relative;
+  top:0;
+  right:0;
+  font-size: .65rem;
+}
+.cy-checkbox-mid input{
+  vertical-align: middle ;
+}
+.cy-switch:checked {
+    border-color: #FC3768;
+    background-color: #FC3768;
+}
+.aui-actionsheet{
+  padding: 0;
+  bottom: -.5rem;
+}
+.aui-actionsheet-btn{
+  border-radius:0;
+}
+/*遮罩 提示标题*/
+.cy-info-title{
+  height: 2.75rem;
+  line-height: 2.75rem;
+  font-size: .7rem;
+  color: #8E8E92;
+}
+/*遮罩 确认键*/
+.cy-text-ok{
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: .8rem;
+  color: #FC3768;
+}
+/*遮罩 取消*/
+.cy-text-cencel{
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: .8rem;
+  color: #1D1D26;
+}
+/*end detailsSetting*/
+
+/*memoInfo*/
+.cy-bg-none{
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background: #F8F8FA !important;
+  color: #8E8E92 !important;
+}
+.cy-detils-ziliao input{
+  font-size: .65rem;
+  color: #8E8E92 ;
+}
+.cy-close{
+  display: none;
+  position: relative;
+  right: 1rem;
+  z-index: 11;
+}
+.cy-close img{
+  width: .625rem;
+}
+.cy-close1 img{
+  margin: .95rem 0 0 0;
+}
+.cy-contact .cy-item-label{
+  display: inline;
+}
+.cy-contact .cy-item-label img,
+.cy-add .cy-item-label img{
+  width: 1.25rem;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 1rem;
+  padding-left: .25rem;
+}
+.cy-del,
+.cy-beizhu,
+.cy-quxiao{
+  float: left;
+  width: calc(100% - 3.5rem);
+  background-image:none !important;
+  height: 2.5rem;
+  padding-left: 0 !important;
+}
+.cy-contact-tel .cy-item-label,
+.cy-add .cy-item-label{
+  width: 1.25rem !important;
+  margin-right: .75rem !important;
+}
+.cy-contact-tel .cy-del-btn,
+.cy-bz,
+.cy-cancel{
+  width: 3.5rem;
+  float: left;
+  height: 2.5rem;
+  line-height: 2.95rem;
+  text-align: center;
+  background: #FC3768;
+  color: #fff;
+}
+.cy-del-btn img{
+  width: 1rem;
+  display: inline-block;
+}
+.cy-name-input{
+  border-top: .5px solid #eee !important;
+}
+.cy-item-position{
+  background-position: 2.55rem bottom !important;
+}
+.cy-img-WH img{
+  width: 1.75rem !important;
+}
+/*end memoInfo*/
+
+/*friendsList*/
+.cy-head-icon img{
+  width: 1rem;
+}
+.cy-friendImg{
+  width:1.75rem !important;
+  padding:.375rem 0 !important;
+  margin-right:.75rem !important;
+}
+.cy-friendLi .cy-friendImg,
+.cy-personLi .cy-friendImg{
+  margin-left:.75rem !important;
+}
+.cy-carePeople{
+  padding-top: 2.25rem !important;
+}
+.cy-carePeople .cy-friendImg{
+  margin-left: 0 !important;
+}
+.cy-text-pad{
+  padding: .75rem 0 .7rem !important;
+}
+.cy-text-pad2{
+  padding: .75rem 0 .7rem .75rem !important;
+}
+.cy-num-friends{
+  position:relative;
+  top:0;
+  left:-.85rem;
+  background: #FC3768;
+}
+.cy-bz,
+.cy-cancel{
+  line-height: 2.5rem;
+}
+.cy-suoyin,
+.cy-initials{
+  position: fixed;
+  right: -5px;
+  top: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   width: 15px;
+}
+
+#cy-letter{
+  width: 5rem;
+  height: 5rem;
+  border-radius: .25rem;
+  font-size: 3.75rem;
+  color: #555;
+  text-align: center;
+  line-height: 5rem;
+  background: rgba(145,145,145,0.6);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin:-2.5rem 0px 0px -2.5rem;
+  z-index: 99;
+  display: none;
+}
+#cy-letter img{
+  width: 2.5rem;
+  height: 2.5rem;
+  float: left;
+  margin:1.25rem 0px 0px 1.25rem;
+}
+.cy-initials{
+  height: auto !important;
+}
+.cy-initials li{
+  height: .8rem !important;
+  font-size: .5rem;
+  -webkit-transform: scale(0.83);
+  color: #1D1D26;
+}
+.cy-initials li img{
+  width: .7rem;
+  z-index: 99;
+}
+.cy-noFriend,
+.cy-weixinMy,
+.cy-phoneMy,
+.cy-search-no{
+  text-align: center;
+  font-size: .65rem;
+  margin-top: .5rem;
+  color: #8E8E92;
+}
+.cy-search-no{
+  display: none;
+}
+/*end friendsList*/
+
+/*addFriend*/
+.cy-tel-contact{
+  width: 1.75rem !important;
+  padding-right: 0 !important;
+  margin-right: .5rem;
+}
+.cy-font-8{
+  font-size: .4rem !important;
+  /*-webkit-transform: scale(0.83);*/
+}
+.cy-margin-top-43{
+  margin-top: 1.1rem;
+}
+.cy-search-tel{
+  display: none;
+}
+/*end addFriend*/
+
+/*details_addFriend*/
+.cy-newFriend-name{
+  padding: .5rem 0;
+}
+/*end details_addFriend*/
+
+/*setting_newFriend*/
+.cy-friendVer{
+  display: none;
+}
+/*setting_newFriend*/
+
+/*friendVer*/
+#cy-gavinPlay,
+#cy-gavinPlay2,
+#cy-tixian,
+#cy-tixian2{
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+#cy-gavinPlay p,
+#cy-gavinPlay2 p,
+#cy-tixian p,
+#cy-tixian2 p{
+    margin-top: 2rem;
+    color: #1D1D26;
+    font-size: .8rem;
+}
+#cy-gavinPlay img,
+#cy-tixian img{
+  position: absolute;
+  left:0;
+  right: 0;
+  margin: auto;
+  width:1.5rem;
+  height:1.5rem;
+  /*设置默认样式，开启3d硬件加速 */
+  -webkit-transform:translate3d(0,0,0);
+  -moz-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0);
+  /*设置动画，animation:动画名称 动画播位秒或微秒 动画播放的速度曲线linear为匀播放次数infinite为循环播放; */
+  -webkit-animation:play 1s lininfinite;
+  -moz-animation:play 1s linear infinite;
+  animation:play 1s linear infinite;
+}
+@-webkit-keyframes play{
+    0%  {
+        /*顺时针旋转*/
+        -webkit-transform:rotate(0deg);
+    }
+    100% {
+        /*顺时针旋转*/
+        -webkit-transform:rotate(360deg);
+    }
+}
+@-moz-keyframes play{
+    0%  {
+        -moz-transform:rotate(0deg);
+    }
+    100% {
+        -moz-transform:rotate(360deg);
+    }
+}
+@keyframes play{
+    0%  {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+#cy-gavinPlay2 img,
+#cy-tixian2 img{
+  position: absolute;
+  left:0;
+  right: 0;
+  margin: auto;
+  width:1.5rem;
+  height:1.5rem;
+}
+/*end friendVer*/
+
+/*memoInfoNew*/
+.cy-memoName{
+  line-height: 1.5rem;
+  margin-left: .75rem;
+  color: #8E8E92;
+}
+/*end memoInfoNew*/
+
+/*newFriend*/
+.cy-accepted{
+  background: #FC3768;
+  color: #fff !important;
+}
+.cy-accept{
+  width: 3rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  position:relative;
+  top:.45rem;
+  border-radius: .2rem;
+  text-align: center;
+}
+.cy-text-hei{
+  height: 1.325rem;
+}
+.cy-overflow{
+  display:block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.cy-add-telFriend{
+  margin-bottom: .75rem;
+  background: #fff;
+  text-align: center;
+  padding: 1rem 0 .6rem;
+}
+.cy-add-telFriend img{
+  width: 1.75rem;
+  display: inline-block;
+  padding-bottom: .4rem;
+}
+/*end newFriend*/
+
+/*friendMailList*/
+.cy-add-friend{
+  width: 3rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: .2rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+.cy-text-pad3{
+  padding: 0  0 0 .75rem !important;
+}
+/*friendMailList*/
+/*pyChoose*/
+.cy-icon-tj{
+  font-size: .8rem;
+  line-height: 1.75rem;
+}
+.cy-icon-tj img{
+  width: 1.75rem;
+  display: inline-block;
+  float: left;
+  margin-right: 1.25rem;
+}
+
+.cy-dialog{
+  text-align: left !important;
+}
+.cy-dialog-header{
+  text-align: left;
+  font-size: .65rem;
+  color: #1D1D26;
+}
+/*end pyChoose*/
+
+/*我的*/
+/*myHome*/
+.cy-myIcon{
+  width:1.25rem !important;
+  padding:0 !important;
+  margin: 0 .875rem;
+}
+.cy-text-pad4{
+  padding: .75rem 0 .7rem !important;
+}
+.cy-text-pad5{
+  padding: 0 !important;
+}
+.cy-myList li:last-child{
+  padding-left: 0;
+}
+.cy-arrow-position::before{
+  top: 85%;
+  right: 0;
+}
+.cy-btn-img img{
+  position: relative;
+  top: .25rem;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  line-height: 2.5rem;
+  margin-right: .5rem;
+}
+.cy-serviceTel{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  width: 17.25rem;
+  height: 5rem;
+  background: #fff;
+  z-index: 20;
+  display: none;
+}
+.cy-serTel,
+.cy-confirmTel{
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.cy-serTel img{
+  position: absolute;
+  top: .95rem;
+  right: .75rem;
+  width: .65rem;
+  display: inline;
+}
+/*end myHome*/
+/*mysetByOldpwd*/
+.cy-oldPwd-form li input{
+  width: 60%;
+}
+.cy-eyeCc{
+  position: absolute;
+  right: 1.75rem;
+}
+.cy-eyeCc img:first-child{
+  /*display:inline-block;*/
+  display: none;
+  margin-right:.25rem;
+  width:.675rem;
+}
+.cy-eyeCc img:last-child{
+  display:inline-block;
+  position:relative;
+  top:.2rem;
+  width:1.4rem;
+}
+/*end mysetByOldpwd*/
+/*myInfo*/
+.cy-myImg{
+  width:2.25rem;
+  margin:.5rem 0;
+}
+.cy-myTel,
+.cy-myWX,
+.cy-myZF{
+  position:relative;
+  top:0;
+  right:25px
+}
+.cy-color-main{
+  color: #FC3768 !important;
+}
+.cy-myIconSJ{
+  width:.575rem !important;
+  padding:0 !important;
+  margin: 0 .995rem 0 .755rem;;
+}
+.cy-myIconWX{
+  width:1.1rem !important;
+  padding:0 !important;
+  margin: 0 .455rem 0 .695rem;
+}
+.cy-myIconZF{
+  width:.8rem !important;
+  padding:0 !important;
+  margin: 0 .7rem;
+}
+/*遮罩图层的按钮*/
+.cy-buttons{
+  color: #1D1D26;
+  font-size: .8rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.cy-tx-pic input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+.cy-xc-pic input{
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+/*end myInfo*/
+
+/*myBindPhone*/
+.cy-form-label{
+  width: auto !important;
+  margin-right: .75rem !important;
+  min-width: 2.2rem !important;
+}
+.cy-code-btn,
+.cy-codetel{
+  background:#FC3768;
+  width: 100px !important;
+  height: 1.5rem ;
+  color:#fff !important;
+}
+.cy-bindTel-btn,
+.cy-next-btn,
+.cy-okBtn,
+.cy-okBtnTel,
+.cy-pwdold-btn,
+.cy-forgotOK,
+.cy-payPwd-btn,
+.cy-redFa-btn{
+  background:#C1C1C4;
+  color:#fff;
+  font-size:.9rem;
+}
+/*表单错误提示*/
+.falseTip{
+  position: relative;
+  top:3rem;
+  left: 0;
+  right: 0;
+  margin:  auto;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+}
+.falseTip span{
+  display:none;
+  padding: .4rem .6rem;
+  background: rgba(29, 29, 38, 0.5);
+  font-size: .7rem;
+  color: #fff;
+  border-radius: .25rem;
+}
+/*end myBindPhone*/
+
+/*账户余额*/
+/*myAccount*/
+.cy-accountMoney{
+  padding: 1.25rem 0 2rem .75rem;
+  background: #666F7A;
+  color: #fff;
+  height: 7.5rem;
+}
+.cy-accountMoney span{
+  display: block;
+}
+.cy-accountMoney span:first-child{
+  letter-spacing:1px;
+}
+.cy-money{
+  font-size: 2.25rem;
+  padding-top: .4rem;
+  letter-spacing:4px;
+}
+/*end myAccount*/
+/*myAccountDetails*/
+.cy-money-details{
+  position: relative;
+}
+.cy-money-details img{
+  width: .4rem;
+  display: inline;
+}
+.cy-details-list{
+  position: absolute;
+  top: 45px;
+  left:0;
+  background: #fff;
+  width: 100%;
+  color: red;
+}
+.cy-head-icon2 img{
+  width: 1.175rem;
+}
+.cy-padding-3{
+  padding-top: 3px;
+}
+.zhezhao{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0, 0, 0, 0.3);
+  webkit-transition: opacity .3s,-webkit-transform .3s;
+  transition: opacity .3s,transform .3s;
+  z-index:1;
+  display: none;
+}
+#wrapper{
+  padding-top: 2.25rem;
+}
+/*上啦加载*/
+#pullUp {
+  padding-top:1.8rem;
+  font-size:.6rem;
+  color:#8E8E92;
+  text-align: center;
+}
+#pullUp .pullUpIcon  {
+  display:inline-block;
+  text-align: center;
+  width:1rem;
+  height:1rem;
+  margin-left: -4rem;
+  background:url(../img/pull-icon@2x.png) 0 0 no-repeat;
+  -webkit-background-size:1rem 2rem; background-size:1rem 2rem;
+  -webkit-transition-property:-webkit-transform;
+  -webkit-transition-duration:250ms;
+}
+.pullUpLabel{
+  margin-left: .5rem;
+  display: inline-block;
+  position: absolute;
+}
+#pullUp .pullUpIcon  {
+  -webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+  -webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullUp.loading .pullUpIcon {
+  background-position:0 100%;
+  -webkit-transform:rotate(0deg) translateZ(0);
+  -webkit-transition-duration:0ms;
+  -webkit-animation-name:loading;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+  from { -webkit-transform:rotate(0deg) translateZ(0); }
+  to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+/*end myAccountDetails*/
+/*myAccountRechage*/
+.cy-payH{
+  height: 3.74rem;
+}
+.cy-payImg{
+  float:left;
+  width:2.25rem;
+  padding-top:.25rem;
+}
+.cy-payM{
+  padding:.1rem 0 .5rem;
+}
+.cy-margin-b-0{
+  margin-bottom: 0;
+}
+.cy-input-14 input::-webkit-input-placeholder{
+  font-size: .7rem;
+}
+.cy-form-label3{
+  width: 3.2rem !important;
+}
+.cy-close2{
+  position: absolute;
+  right: .9rem;
+  bottom: .9rem;
+  display: none;
+}
+.cy-close3{
+  bottom: 1.4rem;
+}
+.cy-close2 img{
+  width: .625rem;
+}
+.cy-fudong {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 19;
+	top: 0;
+	left: 0;
+  background: rgba(29,29,38,0.5);
+}
+.cy-fudong .cy-bjColor {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 8;
+	background: rgba(29,29,38,0.5);
+	top: 0;
+	left: 0;
+}
+.cy-fudong .cy-flTop-box {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+  height: 177px;
+	bottom: 10.15rem;
+  background: #F8F8FA;
+}
+.cy-flTop {
+  height: 2.5rem;
+	font-size: .8rem;
+	border-bottom: 1px solid #E8E8E9;
+	overflow: hidden;
+}
+.cy-flTop img {
+  width: .625rem;
+	margin: .95rem 5.2rem .95rem .75rem;
+  display: inline-block;
+}
+.cy-flTop span {
+  line-height: 2.5rem;
+  color: #1D1D26;
+}
+.cy-password-box {
+	width: 17.175rem;
+	margin: 1.2rem auto 1.1rem;
+	height: 2.85rem;
+	overflow: hidden;
+	border: 1px solid #979797;
+  border-radius: 3px;
+}
+.cy-password-box li {
+	height: 2.85rem;
+	float: left;
+	width: 2.825rem;
+	background: #FFF;
+}
+.cy-password-box li:not(:first-child){
+	border-left: 1px solid #979797;
+}
+.cy-password-box li.cy-miwen {
+	background: #FFF url(../img/dd_03.jpg) center no-repeat ;
+	background-size: 25%;
+}
+.cy-pwdTX{
+  float:right;
+  position:relative;
+  right:.75rem;
+  bottom:.5rem;
+  color:#FC3768;
+  font-size:.8rem;
+}
+.cy-numb-box {
+	position: absolute;
+	z-index: 10;
+	background: #f8f8f8;
+	width: 100%;
+	bottom: 0px;
+}
+.cy-nub-all {
+	overflow: hidden;
+	border-bottom: none;
+  height: 10.2rem;
+  background: #F8F8FA;
+}
+.cy-nub-all li {
+	width: 33.3333%;
+	border-bottom: 1px solid #dadada;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+}
+.cy-nub-all li a {
+	display: block;
+	color: #000;
+  background: #fff;
+	height: 50px;
+	line-height: 50px;
+	overflow: hidden;
+}
+.cy-nub-all li a: active {
+	background: #e0e0e0;
+}
+.cy-nub-all li a.cy-middle-numb {
+	border-left: 1px solid #dadada;
+	border-right: 1px solid #dadada;
+}
+.cy-nub-all li span {
+	display: block;
+	color: #e0e0e0;
+	background: #e0e0e0;
+	height: 50px;
+	line-height: 50px;
+	overflow: hidden;
+}
+.cy-nub-all li span.cy-delClose img {
+	width: 30%;
+  display: inline-block;
+}
+.cy-payment{
+  top: 21.875rem !important;
+  bottom: 7.35rem !important;
+}
+/*end myAccountRechage*/
+/*myAccountReSuccess*/
+.cy-rechage-success{
+  height: 12rem !important;
+}
+.cy-rechage-success span:last-child{
+  color: #1D1D26;
+  font-size: 1.75rem;
+  font-weight: 800;
+  padding-top: .5rem !important;
+}
+.cy-moneyInfo{
+  width: 3.8rem !important;
+  color:#8E8E92;
+  margin-left:.75rem;
+  font-size: .7rem;
+}
+/*end myAccountReSuccess*/
+
+/*myAccountBind*/
+.cy-form-label2{
+  width: auto !important;
+  margin-right: .75rem !important;
+  min-width: 3.5rem !important;
+}
+.cy-bindpay-btn{
+  background:#FC3768;
+  color:#fff;
+  font-size:.9rem;
+}
+/*end myAccountBind*/
+
+/*myAccountBindOK*/
+.cy-bind-success{
+  width: 100%;
+  height: 9.5rem;
+  background: #fff;
+  text-align: center;
+}
+.cy-bind-success img{
+  width: 4.25rem;
+  display: inline-block;
+  padding-top: 1.375rem;
+}
+.cy-bind-success span{
+  display: block;
+  padding-top: 1rem;
+  color: #FC3768;
+  font-size: .95rem;
+  letter-spacing: 2.7px;
+}
+/*end myAccountBindOK*/
+
+/*myAccountWithdrawals*/
+.cy-bottom-line {
+  border: none;
+  background-size: 100% 1px !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom!important;
+  background-image: linear-gradient(0,#E8E8E9,#E8E8E9 50%,transparent 50%) !important;
+  background-image: -webkit-linear-gradient(90deg,#E8E8E9,#E8E8E9 50%,transparent 50%) !important;
+}
+.cy-top-line{
+  border: none;
+  background-size: 100% 1px !important;
+  background-repeat: no-repeat !important;
+  background-position: top!important;
+  background-image: linear-gradient(0,#E8E8E9,#E8E8E9 50%,transparent 50%) !important;
+  background-image: -webkit-linear-gradient(90deg,#E8E8E9,#E8E8E9 50%,transparent 50%) !important;
+}
+.cy-txAll{
+  bottom: 1.3rem;
+  font-size: .7rem;
+}
+.cy-txLiM{
+  line-height:3.75rem;
+  height:3.75rem;
+}
+.cy-font-35,
+.cy-input-35 input{
+  font-size: 1.75rem;
+}
+.cy-kyMoney{
+  background:#fff !important;
+  color:#8E8E92 !important;
+  width: 7rem;
+}
+.cy-form-label4{
+  width: 1rem !important;
+}
+/*end myAccountWithdrawals*/
+/*myAboutCH*/
+.cy-aboutCH{
+  padding: 2.5rem .75rem;
+  font-size: .75rem;
+}
+.cy-aboutCH p{
+  font-size: .75rem;
+  text-align:justify;
+  color: #414141;
+  margin-bottom: 1rem;
+  letter-spacing:2.14px;
+}
+.cy-copy{
+  position: fixed;
+  bottom:.9rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.cy-copy p{
+  text-align: center;
+  color: #8E8E92;
+  letter-spacing:1.86px;
+  font-size: .65rem;
+}
+/*end myAboutCH*/
+
+/*mypayPwdSet*/
+.cy-text-style{
+  display: block;
+  margin-top: 2.875rem;
+  margin-left: .8rem;
+  color: #8E8E92;
+  font-size: .8rem;
+}
+.cy-pwdold{
+  margin:.75rem .75rem 1.25rem;
+}
+.cy-pwdold li input{
+  text-align: center;
+  line-height: 2.85rem;
+}
+.cy-pwdold-btn{
+  margin-bottom: 1.5rem;
+}
+.cy-nub-pay{
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+/*end mypayPwdSet*/
+
+/*myforgotpayPwd*/
+.cy-border-none{
+  background-image: none;
+}
+.cy-forgotpay{
+  margin: 2.775rem auto 1.25rem;
+  width: 17.25rem;
+}
+.cy-margin-l-5{
+  margin-right: .25rem;
+}
+.cy-forgotpay li{
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.cy-forgotpay .cy-codetel{
+  line-height: 1.5rem;
+}
+/*end myforgotpayPwd*/
+
+/*redPacket*/
+.cy-cardH{
+  height:3.25rem;
+  line-height:2.25rem;
+  padding-right:0;
+}
+.cy-cardH div:first-child{
+  width:2.25rem;
+}
+.cy-redP-text{
+  line-height:2.25rem;
+  padding-bottom:.5rem;
+  padding-left:.25rem;
+  margin-right:0;
+}
+/*end redPacket*/
+
+/*redPacketFa*/
+.cy-margin-right-45{
+  margin-right: 1.25rem;
+}
+.cy-input-right{
+  width: 5.65rem !important;
+  text-align: right;
+}
+.cy-input-right input{
+  width: 2.65rem !important;
+  text-align: right;
+  display: inline !important;
+  font-size: .65rem;
+}
+.cy-input-right span,
+.cy-input-13 input::-webkit-input-placeholder,
+.cy-input-right input::-webkit-input-placeholder{
+  font-size: .65rem;
+}
+.cy-banChoose{
+  height:2.5rem;
+  line-height:1.5rem;
+}
+.cy-add-banner{
+  width: 1.25rem;
+}
+.cy-banner-box{
+  width:100%;
+  height:5rem;
+  background-color:#fff;
+  padding: .8rem 1rem;
+}
+.cy-redP-money{
+  text-align:center;
+  margin-top:.35rem;
+  color:#1D1D26;
+  font-size:1.75rem;
+  letter-spacing:2.5px;
+}
+/*end redPacketFa*/
+
+/*redPacketRecord*/
+.cy-redP-record{
+  width: 100%;
+  height: 13.75rem;
+  padding-top: 2.25rem;
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
+.cy-redP-record img{
+  width: 4rem;
+  display: inline-block;
+  padding-top: 1.6rem;
+}
+.cy-redP-record span:nth-child(2){
+  display: block;
+  padding-top: .75rem;
+  color: #1D1D26;
+}
+.cy-redPRe{
+  font-size: .8rem;
+}
+.cy-redP-record span:last-child{
+  display: block;
+  color: #8E8E92;
+  font-size: .65rem;
+  padding-top: .5rem !important;
+}
+.cy-myIconRed{
+  width: 2.25rem !important;
+  padding: 0 !important;
+  margin: 0 .875rem;
+}
+.cy-redP-time{
+  float:right;
+  text-align:right;
+  padding-right:.75rem;
+}
+.cy-redP-time span:first-child{
+  display:block;
+  color:#FC3768
+}
+.cy-redP-my{
+  text-align: center;
+}
+.cy-redP-my span{
+  display: block;
+}
+.cy-redP-my span:first-child{
+  color:#1D1D26;
+  font-size:.8rem;
+}
+.cy-redP-my span:last-child{
+  color:#8E8E92;
+  font-size:.5rem;
+}
+.cy-redP-info span{
+  font-size:.6rem;
+  /*-webkit-transform:scale(0.8);*/
+  display: block;
+}
+.cy-redQ-btn{
+  margin-top: 5.85rem;
+  background:#FC3768;
+  color:#fff;
+  font-size:.9rem;
+}
+/*end redPacketRecord*/
+
+/*redPacketQiang*/
+.cy-bannerQi{
+  margin-top:.4rem
+}
+.cy-redPPic{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  right:0;
+  background:rgba(29,29,38,.5);
+  display:none;
+}
+.cy-redPPic img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10rem;
+}
+.cy-redPyq{
+  color:#FC3768 !important;
+  font-size:1.2rem !important;
+}
+/*end redPacketQiang*/
+/*redPackSnatched*/
+.cy-getredP{
+  font-size: .7rem;
+}
+.cy-year{
+  position:absolute;
+  right:.5rem;
+  top:3.45rem;
+}
+.cy-year span,
+.cy-year em{
+  color:#FC3768 !important;
+  font-size:.9rem !important;
+}
+.cy-year p{
+  margin-bottom: -.6rem;
+}
+.cy-year img{
+  width:.7rem;
+  padding-top:0;
+}
+.cy-choose-hook{
+  height: 2rem;
+}
+/*end redPackSnatched*/
+
+/*/我的*/
+.cy-width-p{
+	width: 3.25rem;
+	margin-top: -.5rem;
+}
+.cy-pad-header{
+	padding: 1.05rem 0.75rem;
+}
+.cy-bar-tab{
+	position: relative;
+    top: auto;
+    bottom: 0;
+    table-layout: fixed;
+    background-color: #ffffff;
+    color: #333;
+    padding: .2rem;
+}
+.cy-bar-tab span{
+	color: #333;
+	font-size: .8rem;
+}
+.cy-bar-tab .cy-bar-tab-label{
+	color: #8E8E92;
+	font-size: .6rem !important;
+}
+.cy-visit{
+	padding: .5rem .75rem;
+	background: #fff;
+	border-top: 1px solid #ddd;
+}
+.cy-visit p:first-child{
+	color: #8E8E92;
+	font-size: .5rem;
+}
+.cy-visit p:nth-child(2){
+	color: #333;
+	font-size: .65rem;
+}
+.cy-visit img{
+	width: 2.5rem;
+	float: left;
+	margin: .5rem .45rem 0rem 0;
+}
+.cy-visit img:nth-child(8){
+	margin-right: 0 !important;
+}
+.clear{
+	clear: both;
+}
+.cy-more{
+	line-height: 1.75rem;
+	background: #F7F7F7;
+	text-align: center;
+	color: #5784BF;
+	font-size: .6rem;
+}
+.cy-myListT{
+	margin-top: .75rem;
+}
+.cy-content{
+	padding: .5rem .75rem;
+}
+.cy-collNei{
+	padding:1rem .75rem;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
+	font-size: .8rem;
+	background: #fff;
+	margin-bottom: .5rem;
+}
+.cy-collNei p:first-child{
+	color: #333;
+}
+.cy-collNei p:last-child{
+	margin-top: .7rem;
+	color: #8E8E92;
+	font-size: .6rem;
+}
+.cy-collNei img{
+	width: 3.75rem;
+	display: inline-block;
+}
+.cy-inline{
+	display: inline-block;
+	width: 11rem;
+	margin-left: .5rem;
+	vertical-align:top;
+}
+.cy-inline p:first-child{
+	margin-top: 0;
+	font-size: .7rem;
+	color: #333;
+}
+.cy-notesCont{
+	padding: 3rem .75rem 1.5rem .75rem;
+	background: #fff;
+	height: 20rem;
+}
+.cy-notesCont textarea{
+	font-size: .8rem;
+}
+.cy-phCont{
+	padding-top: 2.25rem;
+	padding-bottom: 2.5rem;
+}
+.cy-phImg{
+	position: relative;
+}
+.cy-phImg img:nth-child(2){
+	width: 3.5rem;
+	height: 3.5rem;
+	position: absolute;
+	right: .75rem;
+	bottom: -1rem;
+	z-index: 11;
+}
+.cy-phImg p{
+	position: absolute;
+	right: .75rem;
+	bottom: -2.5rem;
+	z-index: 11;
+	color: #8E8E92;
+	font-size: .75rem;
+	font-weight:
+}
+.my-photoInfo{
+	padding: 0 .75rem;
+}
